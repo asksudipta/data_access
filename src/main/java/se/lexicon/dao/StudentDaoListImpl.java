@@ -1,6 +1,7 @@
-package se.lexicon;
+package se.lexicon.dao;
 
 import org.springframework.stereotype.Component;
+import se.lexicon.dao.StudentDao;
 import se.lexicon.model.Student;
 
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ import java.util.List;
 
 
 @Component
-public class StudentDaoListImpl implements StudentDao{
+public class StudentDaoListImpl implements StudentDao {
 
     List<Student> studentInformation;
 
