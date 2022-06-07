@@ -1,8 +1,15 @@
 package se.lexicon.exception;
 
-public class DataNotFoundException extends Exception{
+public class DataNotFoundException extends Exception {
 
-    public DataNotFoundException(String message) {
+    private String objectName;
+
+    public DataNotFoundException(String message, String objectName) {
         super(message);
+        this.objectName = objectName;
+    }
+
+    public String objectName() {
+        return objectName;
     }
 }
